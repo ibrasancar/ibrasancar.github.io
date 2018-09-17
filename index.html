@@ -18,21 +18,31 @@
             .border { margin: 0px 20px;}
         }
         .border > p { margin: 0; padding: 80px 20px; font-size: 1em; line-height: 1.3em}
-
+        .carousel-item active > img { height: 500px; object-fit: cover; }
+        .list-group-item { overflow: hidden; }
+        .list-icon { position: absolute; left: -5px; top: -5px; font-size: 48px; transform: rotate(10deg); opacity: .6; }
 
     </style>
+
 </head>
 <body>
+
+
 <div class="container justify-content-center mt-5">
     <div class="row align-items-center">
         <div class="col-md-6">
             <div class="head">
                 <h1>{{ ibrasancar }}</h1>
                 <h3>{ junior back-end developer }</h3>
-                <code>if($friends['whoever']['message'] == "ooh ne güzel pc başında para kazanıyosunuz...")<br/>
+                <code>
+                    if($friends['whoever']['message'] == "ooh ne güzel pc başında para kazanıyosunuz...")<br/>
                     {<br/>
+                    &emsp;$hated_list[∞] = $friends['whoever'];<br/>
                     &emsp;unset($friends['whoever']);<br/>
-                    }</code>
+                    }
+                </code>
+                <br/>
+                <span class="badge badge-danger">sevgilim var <i class="fa fa-heart"></i></span> // zorla eklenmemiştir
             </div>
         </div>
         <div class="col-md-6">
@@ -50,11 +60,16 @@
         <div class="col-md-12">
             <h2>Çalışmalarım</h2>
         </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-6 mt-3">
+            <ul class="list-group">
+                <li class="list-group-item"><i class="fas fa-lemon list-icon" style="color: #fdcb6e"></i> Diyetisyen Portalı</li>
+                <li class="list-group-item"><i class="fas fa-table list-icon" style="color: #0984e3"></i> Excel to MySQL</li>
+            </ul>
+        </div>
+        <div class="col-md-3"></div>
     </div>
 </div>
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
